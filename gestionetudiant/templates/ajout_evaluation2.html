@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  {% load static %}
+ <title>EVALUATIO DES ETUDIANTS</title>
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo.jpg' %}" rel="icon">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../../static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal - v4.6.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    {% load static %}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/remixicon/remixicon.css' %} " />
+   <link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" />
+
+
+
+
+ <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}" />
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="accueil.html">GESTION D'EVALUATION DES ETUDIATS</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>IPD <span>INSTITUT POLITECHNIQUE DE DAKAR</span> THOMAS SANKARA</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+         <!-- <li><a class="nav-link active" href="#header">Accueil</a></li>-->
+          <li><a class="nav-link active" href="/accueil">Accueil</a></li>
+         <!-- <li><a class="nav-link" href="#about">Etudiant</a></li>-->
+          <li><a class="nav-link" href="/etudiant">Etudiant</a></li>
+          <!--<li><a class="nav-link" href="#resume">Evaluation</a></li>-->
+          <li><a class="nav-link" href="/evaluation">Evaluation</a></li>
+          <!--<li><a class="nav-link" href="#services">Matiere</a></li>-->
+          <li><a class="nav-link" href="/matiere">Matiere</a></li>
+         <!-- <li><a class="nav-link" href="#portfolio">Semestre</a></li>-->
+          <li><a class="nav-link" href="/semestre">Semestre</a></li>
+         <!-- <li><a class="nav-link" href="#contact">Contact</a></li>-->
+          <!-- <li><a class="nav-link" href="/contact">Contact</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+<br><br>
+
+
+<!--<h1 class="text-center">Ajout Evaluation</h1>-->
+<div class="text-center">
+      <form method="post" class="form">
+          <!--pour securiser le formulair contre les attaque inter site-->
+          {% csrf_token %}
+        <div class="form-goup">
+             <!-- inserer le formulair-->
+             {{form.as_p}}
+        </div>
+
+        <button class="btn btn-primary save" type="submit">Valider</button>
+    </form>
+</div>
+
+
+
+
+
+
+</body>
+</html>

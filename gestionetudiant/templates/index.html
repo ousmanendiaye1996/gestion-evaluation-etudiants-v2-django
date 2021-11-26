@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.min.css'%}" >
+    <link href="{{ STATIC_URL }}/css/bootstrap.min.css" rel="stylesheet">
+
+
+    {% load static %}
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <h1><a href="/home">Gestion d'evaluation</a></h1>
+    </div>
+    <ul class="nav navbar-nav">
+
+      <li><a href="/liste">Etudiants</a></li>
+      <li><a href="/liste_evaluation">Evaluation</a></li>
+         <li><a href="/liste_matiere">Matiere</a></li>
+         <li><a href="/liste_semestre">Semestre</a></li>
+
+
+    </ul>
+      <br><br><br>
+
+</div></div>
+    </nav>
+
+        <div style="width:90%; height:80%; align:center; float:center">
+          <img style="width:100%; height:500; align:center; float:center" src="{% static 'assets/img/ipd1.jpg' %}" alt=""></center>
+            <br>
+        </div>
+  </div>
+</body>
+</html>
